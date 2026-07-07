@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: "Roboto", Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 60px auto 60px;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #ffc328, #ff9f00);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+header span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #333;
+}
+
+.hamburger::after {
+    content: "\2630";
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    padding: 1rem;
+}
+
+.navigation li.current {
+    background-color: #ff9f00;
+    color: #fff;
+    border-radius: 4px;
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+main h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    color: #444;
+}
+
+main p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #ffc328;
+    color: #222;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-info {
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation li {
+        margin-right: 1rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: #222;
+        font-weight: 500;
+    }
+
+    .navigation li.current {
+        background-color: #ff9f00;
+        color: #fff;
+        border-radius: 4px;
+    }
+}

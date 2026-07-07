@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Usanga, Mfon-Obong's Site</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
+
 <body>
-    
+    <header>
+        <img src="images/home.svg" alt="site logo" width="50" height="50">
+        <span>Usanga, Mfon-Obong</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">News & Events</a></li>
+            <li><a href="#">Dedicated Temples</a></li>
+            <li><a href="#">Announced Temples</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Hello World. Welcome!</h1>
+        <p>This is Mphun’s page and it uses normalize.css to ensure consistent styling across browsers.</p>
+
+        <section>
+            <h2>About Me</h2>
+            <p>I’m building a responsive site header with CSS Grid, a logo, and a hamburger menu for mobile devices.</p>
+        </section>
+
+        <section>
+            <h2>My Work</h2>
+            <p>Here you’ll find examples of my projects, styled with modern CSS and responsive layouts.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2026 Usanga, Mfon-Obong. All rights reserved.</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.microsoft.com/en-us/microsoft-teams/log-in" target="_blank">
+                <img src="images/microsoft-teams.svg" alt="Microsoft Teams">
+            </a>
+            <a href="https://github.com/maccharmy" target="_blank">
+                <img src="images/github.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/maccharmy1" target="_blank">
+                <img src="images/linkedin-square.svg" alt="LinkedIn">
+            </a>
+            <a href="https://twitter.com/maccharmy" target="_blank">
+                <img src="images/twitter-alt.svg" alt="Twitter">
+            </a>
+        </div>
+    </footer>
+
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/footer.js"></script>
 </body>
+
 </html>
