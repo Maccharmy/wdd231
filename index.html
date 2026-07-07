@@ -3,78 +3,69 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Welcome to Usanga, Mfon-Obong's site — showcasing projects, responsive design, and modern web development skills.">
+        content="Responsive Course Home Page for WDD231 showcasing HTML, CSS, and JavaScript projects.">
     <meta name="author" content="Usanga, Mfon-Obong">
-    <title>Usanga, Mfon-Obong's Site</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 - Course Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/home.svg" alt="site logo" width="50" height="50">
-        <span>Usanga, Mfon-Obong</span>
-        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <img src="images/logo.png" alt="Site Logo">
+        <span>Web Frontend Development</span>
+        <button id="menu" aria-label="Menu">&#9776;</button>
     </header>
 
-    <nav id="nav-bar" class="navigation">
-        <ul>
-            <li class="current"><a href="#">News & Events</a></li>
-            <li><a href="#">Dedicated Temples</a></li>
-            <li><a href="#">Announced Temples</a></li>
-        </ul>
+    <nav id="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="final/index.html">Final</a>
     </nav>
 
     <main>
-        <h1>Hello World. Welcome!</h1>
-        <p>This is Mphun’s page and it uses normalize.css to ensure consistent styling across browsers.</p>
-
+        <h1>Home</h1>
         <section>
-            <h2>About Me</h2>
-            <p>I’m building a responsive site header with CSS Grid, a logo, and a hamburger menu for mobile devices.</p>
+            <h2>About This Course</h2>
+            <p>Welcome to WDD231. This course builds on your prior experience with the core technologies of web design
+                and development including HTML, CSS, JavaScript, and design. The course focuses on user experience,
+                accessibility, compliance, performance optimization, and basic API use.</p>
         </section>
-
         <section>
-            <h2>My Work</h2>
-            <p>Here you’ll find examples of my projects, styled with modern CSS and responsive layouts.</p>
+            <h2>Certificate Courses</h2>
+            <div id="courseContainer"></div>
+            <div id="filters">
+                <button id="allBtn">All Courses</button>
+                <button id="wddBtn">WDD Courses</button>
+                <button id="cseBtn">CSE Courses</button>
+            </div>
+            <p>Total Credits: <span id="totalCredits"></span></p>
         </section>
-
         <section>
-            <h2>Contact</h2>
-            <p>Feel free to reach out via LinkedIn, GitHub, or Twitter for collaborations and projects.</p>
+            <h2>Resources</h2>
+            <p>Links to GitHub, LinkedIn, and other resources.</p>
         </section>
     </main>
 
     <footer>
-        <div class="footer-info">
-            <p>&copy; 2026 Usanga, Mfon-Obong. All rights reserved.</p>
-            <p>Last Modified: <span id="lastModified"></span></p>
-        </div>
-
-        <div class="social-icons">
-            <a href="https://www.microsoft.com/en-us/microsoft-teams/log-in" target="_blank">
-                <img src="images/microsoft-teams.svg" alt="Microsoft Teams">
+        <div class="social">
+            <a href="https://github.com/yourgithubusername" aria-label="GitHub">
+                <i class="fab fa-github"></i>
             </a>
-            <a href="https://github.com/maccharmy" target="_blank">
-                <img src="images/github.svg" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/maccharmy1" target="_blank">
-                <img src="images/linkedin-square.svg" alt="LinkedIn">
-            </a>
-            <a href="https://twitter.com/maccharmy" target="_blank">
-                <img src="images/twitter-alt.svg" alt="Twitter">
+            <a href="https://linkedin.com/in/yourlinkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
             </a>
         </div>
+        <p>&copy; <span id="year"></span> Usanga, Mfon-Obong. Nigeria</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 

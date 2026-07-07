@@ -1,7 +1,6 @@
-const navButton = document.querySelector('#nav-button');
-const navBar = document.querySelector('#nav-bar');
+const menuButton = document.getElementById("menu");
+const nav = document.getElementById("nav");
 
-navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    navBar.classList.toggle('show');
+menuButton.addEventListener("click", () => {
+    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
 });
