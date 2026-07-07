@@ -1,14 +1,17 @@
 :root {
     --primary: #1e3a8a;
-    --secondary: #d35400;
+    --secondary: #a63c00;
+    --secondary-hover: #822f00;
     --background: #f9fafb;
+    --text: #333333;
+    --white: #ffffff;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: var(--background);
-    color: #333;
+    color: var(--text);
 }
 
 header,
@@ -47,7 +50,7 @@ nav {
 nav a {
     padding: 0.5rem;
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 nav a.active {
@@ -68,7 +71,7 @@ nav a:hover {
 }
 
 section {
-    background: white;
+    background: var(--white);
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
@@ -77,7 +80,7 @@ section {
 
 button {
     background-color: var(--secondary);
-    color: white;
+    color: var(--white);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -86,12 +89,12 @@ button {
 }
 
 button:hover {
-    background-color: #b84300;
+    background-color: var(--secondary-hover);
 }
 
 footer {
     background-color: var(--primary);
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 1rem;
 }
@@ -109,6 +112,6 @@ footer a {
 }
 
 .social a:hover {
-    color: white;
+    color: var(--white);
     transform: scale(1.2);
 }
