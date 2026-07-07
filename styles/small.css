@@ -1,6 +1,7 @@
 :root {
     --primary: #1e3a8a;
-    --secondary: #f97316;
+    --secondary: #d35400;
+    /* darker orange for better contrast */
     --background: #f9fafb;
 }
 
@@ -86,7 +87,7 @@ button {
 }
 
 button:hover {
-    background-color: #ea580c;
+    background-color: #b84300;
 }
 
 footer {
