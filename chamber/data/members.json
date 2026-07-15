@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Ibom Tech Solutions",
+        "address": "12 Wellington Bassey Way, Uyo, Akwa Ibom",
+        "phone": "+234 803 111 2233",
+        "website": "https://www.ibomtech.com",
+        "image": "business1.jpg",
+        "membership": 3,
+        "description": "Technology solutions and software development."
+    },
+    {
+        "name": "Akwa Fashion House",
+        "address": "45 Oron Road, Uyo, Akwa Ibom",
+        "phone": "+234 803 222 3344",
+        "website": "https://www.akwafashion.com",
+        "image": "business2.jpg",
+        "membership": 2,
+        "description": "Modern African fashion and clothing."
+    },
+    {
+        "name": "Unity Supermarket",
+        "address": "8 Ikot Ekpene Road, Uyo",
+        "phone": "+234 803 333 4455",
+        "website": "https://www.unitysupermarket.com",
+        "image": "business3.jpg",
+        "membership": 1,
+        "description": "Retail groceries and household supplies."
+    },
+    {
+        "name": "Marveeny Pharmacy",
+        "address": "22 Abak Road, Uyo",
+        "phone": "+234 803 444 5566",
+        "website": "https://www.marveenypharmacy.com",
+        "image": "business4.jpg",
+        "membership": 3,
+        "description": "Pharmaceutical products and healthcare services."
+    },
+    {
+        "name": "Ibom Printing Press",
+        "address": "30 Aka Road, Uyo",
+        "phone": "+234 803 555 6677",
+        "website": "https://www.ibomprinting.com",
+        "image": "business5.jpg",
+        "membership": 2,
+        "description": "Commercial printing and branding services."
+    },
+    {
+        "name": "Sunrise Hotels",
+        "address": "15 Nwaniba Road, Uyo",
+        "phone": "+234 803 666 7788",
+        "website": "https://www.sunrisehotels.com",
+        "image": "business6.png",
+        "membership": 1,
+        "description": "Hotel accommodation and hospitality services."
+    },
+    {
+        "name": "Green Farms Ltd",
+        "address": "18 Ikot Oku Ikono Road, Uyo",
+        "phone": "+234 803 777 8899",
+        "website": "https://www.greenfarms.com",
+        "image": "business7.jpg",
+        "membership": 2,
+        "description": "Agricultural production and food processing."
+    }
+]
