@@ -17,8 +17,14 @@
     .site-name p {
         font-size: 1rem;
     }
+
     .hero-banner {
         height: 350px;
+    }
+
+    .hero-banner {
+        width: 100%;
+        object-fit: cover;
     }
 
     #menu {
@@ -59,15 +65,13 @@
     }
 
     #members.list .member-card {
-        display: grid;
-        grid-template-columns: 120px 1fr;
-        gap: 1.5rem;
-        align-items: center;
+        display: block;
         text-align: left;
+        padding: 1rem;
     }
 
     #members.list .member-card img {
-        margin: 0;
+        display: none;
     }
 
     footer {
@@ -83,13 +87,13 @@
         margin: 0;
     }
 
-        .social img {
-            width: 18px;
-            height: 18px;
-            max-width: 18px;
-            max-height: 18px;
-            object-fit: contain;
-            display: block;
+    .social img {
+        width: 18px;
+        height: 18px;
+        max-width: 18px;
+        max-height: 18px;
+        object-fit: contain;
+        display: block;
     }
 
     .development-info {
