@@ -19,11 +19,8 @@
     }
 
     .hero-banner {
-        height: 200px;
-    }
-
-    .hero-banner {
         width: 100%;
+        height: 200px;
         object-fit: cover;
     }
 
@@ -60,6 +57,10 @@
         border-left: none;
     }
 
+    .home-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     #members.grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
@@ -88,10 +89,8 @@
     }
 
     .social img {
-        width: 228px;
+        width: 22px;
         height: 22px;
-        max-width: 22px;
-        max-height: 22px;
         object-fit: contain;
         display: block;
     }
@@ -100,11 +99,4 @@
         text-align: right;
         margin: 0;
     }
-
-@media (min-width:768px) {
-
-    .home-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
 }
