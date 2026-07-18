@@ -72,10 +72,11 @@ nav ul {
 
 nav a {
     display: block;
-    padding: 1rem;
+    padding: 0.75rem;
+    font-size: 0.95rem;
     color: var(--light);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
     border-top: 1px solid rgba(255, 255, 255, .2);
     transition: .3s;
 }
@@ -132,6 +133,7 @@ main h1 {
     display: flex;
     flex-direction: column;
 }
+
 .member-card {
     background: var(--light);
     border: 3px solid var(--secondary);
@@ -161,10 +163,10 @@ main h1 {
 }
 
 .member-card img {
-    width: 110px;
-    height: 110px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
 }
 
 .member-card h3 {
@@ -246,4 +248,37 @@ footer {
 
 #members.list .member-card img {
     display: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #D4AF37;
+    color: #0B3D91;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.home-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
 }
