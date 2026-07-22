@@ -100,3 +100,67 @@
         margin: 0;
     }
 }
+
+@media screen and (min-width:768px) {
+
+    .discover-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 2rem;
+
+    }
+
+    .discover-card {
+
+        display: grid;
+
+        grid-template-columns: 300px 1fr;
+
+        align-items: center;
+
+    }
+
+    .discover-card img {
+
+        height: 100%;
+
+        object-fit: cover;
+
+        transition: .4s;
+
+    }
+
+    .discover-card img:hover {
+
+        transform: scale(1.05);
+
+    }
+
+}
+
+@media screen and (min-width:768px) {
+
+    .join-layout {
+
+        display: grid;
+
+        grid-template-columns: 2fr 1fr;
+
+        align-items: start;
+
+        gap: 2rem;
+
+    }
+
+    .membership-cards {
+
+        position: sticky;
+
+        top: 1rem;
+
+    }
+
+}
